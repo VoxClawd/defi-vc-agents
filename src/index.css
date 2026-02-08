@@ -85,6 +85,14 @@ a {
 .nav-logo-text {
   font-weight: 600;
   font-size: 18px;
+  display: block;
+  line-height: 1.2;
+}
+
+.nav-logo-sub {
+  font-size: 11px;
+  color: var(--text-muted);
+  display: block;
 }
 
 .nav-links {

@@ -1,0 +1,348 @@
+/* Stage Page */
+.stage-page {
+  min-height: 100vh;
+  background: var(--bg-primary);
+  padding: 24px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/* Header */
+.stage-header {
+  margin-bottom: 24px;
+}
+
+.stage-title-row {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  margin-bottom: 16px;
+  flex-wrap: wrap;
+}
+
+.stage-title {
+  font-size: 32px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.stage-meta {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.stage-live-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 4px 12px;
+  border-radius: 12px;
+  background: rgba(34, 197, 94, 0.15);
+  color: #22c55e;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.live-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #22c55e;
+  animation: pulse 2s infinite;
+}
+
+.stage-stat {
+  font-size: 14px;
+  color: var(--text-muted);
+}
+
+.stage-controls {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.stage-btn {
+  padding: 8px 16px;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+  background: var(--bg-card);
+  color: var(--text-secondary);
+  font-size: 13px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.stage-btn:hover {
+  background: var(--bg-secondary);
+  color: var(--text-primary);
+}
+
+.stage-btn.paused {
+  background: rgba(239, 68, 68, 0.15);
+  border-color: rgba(239, 68, 68, 0.3);
+  color: #ef4444;
+}
+
+.stage-tabs {
+  display: flex;
+  gap: 4px;
+  margin-left: auto;
+  background: var(--bg-card);
+  padding: 4px;
+  border-radius: 10px;
+  border: 1px solid var(--border);
+}
+
+.stage-tab {
+  padding: 8px 16px;
+  border-radius: 6px;
+  border: none;
+  background: transparent;
+  color: var(--text-muted);
+  font-size: 13px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.stage-tab:hover {
+  color: var(--text-secondary);
+}
+
+.stage-tab.active {
+  background: var(--bg-secondary);
+  color: var(--text-primary);
+}
+
+/* Welcome Card */
+.stage-welcome {
+  padding: 20px 24px;
+  border-radius: 12px;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  margin-bottom: 20px;
+}
+
+.stage-welcome h3 {
+  font-size: 16px;
+  font-weight: 600;
+  margin: 0 0 8px 0;
+  font-style: italic;
+}
+
+.stage-welcome p {
+  font-size: 14px;
+  color: var(--text-secondary);
+  margin: 0;
+  line-height: 1.6;
+}
+
+.stage-welcome strong {
+  color: var(--text-primary);
+}
+
+/* Mission Bar */
+.mission-bar {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 16px 20px;
+  border-radius: 12px;
+  background: linear-gradient(135deg, var(--bg-card), var(--bg-secondary));
+  border: 1px solid var(--border);
+  margin-bottom: 20px;
+}
+
+.mission-agents {
+  display: flex;
+  gap: -8px;
+}
+
+.mission-agent {
+  width: 36px;
+  height: 36px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  border: 2px solid;
+  margin-right: -6px;
+  position: relative;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.mission-agent:hover {
+  transform: scale(1.1);
+  z-index: 10;
+}
+
+.mission-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.mission-label {
+  font-size: 11px;
+  color: #f59e0b;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+.mission-name {
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.mission-time {
+  font-size: 13px;
+  color: var(--text-muted);
+}
+
+/* Feed */
+.stage-feed {
+  border-radius: 16px;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  overflow: hidden;
+}
+
+.feed-container {
+  padding: 8px 0;
+}
+
+.feed-entry {
+  display: grid;
+  grid-template-columns: 70px 100px 1fr;
+  gap: 12px;
+  padding: 14px 20px;
+  border-left: 3px solid transparent;
+  transition: all 0.2s;
+  align-items: start;
+}
+
+.feed-entry:hover {
+  background: rgba(255, 255, 255, 0.02);
+}
+
+.feed-entry.action {
+  background: rgba(245, 158, 11, 0.05);
+  border-left-color: #f59e0b;
+}
+
+.feed-entry.reply {
+  background: rgba(99, 102, 241, 0.05);
+  border-left-color: #6366f1;
+}
+
+.feed-entry-time {
+  font-size: 12px;
+  color: var(--text-muted);
+  font-family: 'SF Mono', 'Fira Code', monospace;
+}
+
+.feed-entry-agent {
+  font-size: 14px;
+  font-weight: 600;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.feed-entry-content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.feed-badge {
+  padding: 2px 8px;
+  border-radius: 4px;
+  font-size: 11px;
+  font-weight: 600;
+  flex-shrink: 0;
+}
+
+.feed-badge.pulse {
+  background: rgba(113, 113, 122, 0.2);
+  color: #a1a1aa;
+}
+
+.feed-badge.action {
+  background: rgba(245, 158, 11, 0.2);
+  color: #f59e0b;
+}
+
+.feed-text {
+  color: var(--text-secondary);
+}
+
+.feed-text.muted {
+  color: var(--text-muted);
+}
+
+.feed-reply-indicator {
+  color: var(--text-muted);
+  font-size: 13px;
+}
+
+.feed-more {
+  width: 100%;
+  font-size: 12px;
+  color: var(--text-muted);
+  margin-top: 4px;
+  cursor: pointer;
+  padding-left: 16px;
+}
+
+.feed-more:hover {
+  color: var(--text-secondary);
+}
+
+/* Responsive */
+@media (max-width: 700px) {
+  .stage-page {
+    padding: 16px;
+  }
+  
+  .stage-title {
+    font-size: 24px;
+  }
+  
+  .stage-controls {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  
+  .stage-tabs {
+    margin-left: 0;
+    justify-content: center;
+  }
+  
+  .feed-entry {
+    grid-template-columns: 60px 1fr;
+    gap: 8px;
+  }
+  
+  .feed-entry-agent {
+    grid-column: 2;
+  }
+  
+  .feed-entry-content {
+    grid-column: 1 / -1;
+  }
+  
+  .mission-bar {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+}
