@@ -1,0 +1,278 @@
+/* Team Page */
+.team-page {
+  min-height: 100vh;
+  background: var(--bg-primary);
+  padding: 40px 0 80px;
+}
+
+/* Header */
+.team-header {
+  text-align: center;
+  margin-bottom: 48px;
+}
+
+.team-title {
+  font-size: 42px;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+
+.team-subtitle {
+  font-size: 18px;
+  color: var(--text-secondary);
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+/* Overview Cards */
+.team-overview {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+  margin-bottom: 48px;
+}
+
+@media (max-width: 800px) {
+  .team-overview {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.overview-card {
+  text-align: center;
+  padding: 24px;
+  border-radius: 16px;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+}
+
+.overview-icon {
+  font-size: 28px;
+  margin-bottom: 8px;
+}
+
+.overview-value {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+
+.overview-label {
+  font-size: 14px;
+  color: var(--text-muted);
+}
+
+/* Agent Cards */
+.team-agents {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+  margin-bottom: 64px;
+}
+
+@media (max-width: 900px) {
+  .team-agents {
+    grid-template-columns: 1fr;
+  }
+}
+
+.agent-full-card {
+  border-radius: 20px;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  overflow: hidden;
+  transition: all 0.3s;
+}
+
+.agent-full-card:hover {
+  border-color: var(--text-muted);
+  transform: translateY(-4px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+}
+
+.agent-full-header {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 24px;
+  border-bottom: 1px solid var(--border);
+  background: var(--bg-secondary);
+}
+
+.agent-full-icon {
+  width: 64px;
+  height: 64px;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 32px;
+  border: 2px solid;
+  flex-shrink: 0;
+}
+
+.agent-full-info {
+  flex: 1;
+}
+
+.agent-full-name-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 4px;
+  flex-wrap: wrap;
+}
+
+.agent-full-name {
+  font-size: 24px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.agent-full-archetype {
+  padding: 4px 10px;
+  border-radius: 6px;
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.agent-full-role {
+  font-size: 15px;
+  color: var(--text-muted);
+  margin: 0;
+}
+
+.agent-full-body {
+  padding: 24px;
+}
+
+.agent-full-desc {
+  font-size: 15px;
+  color: var(--text-secondary);
+  line-height: 1.7;
+  margin: 0 0 20px 0;
+}
+
+.agent-full-style {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 20px;
+  font-size: 14px;
+}
+
+.style-label {
+  color: var(--text-muted);
+}
+
+.style-value {
+  color: var(--text-secondary);
+  font-style: italic;
+}
+
+.agent-full-traits {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 24px;
+}
+
+.agent-full-trait {
+  padding: 6px 14px;
+  border-radius: 8px;
+  font-size: 13px;
+  background: var(--bg-secondary);
+  color: var(--text-secondary);
+  border: 1px solid var(--border);
+}
+
+.agent-full-stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  padding-top: 20px;
+  border-top: 1px solid var(--border);
+}
+
+.agent-stat {
+  text-align: center;
+}
+
+.agent-stat-value {
+  display: block;
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.agent-stat-label {
+  font-size: 12px;
+  color: var(--text-muted);
+}
+
+/* Team Dynamics */
+.team-dynamics {
+  text-align: center;
+}
+
+.dynamics-title {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.dynamics-subtitle {
+  font-size: 16px;
+  color: var(--text-muted);
+  margin-bottom: 32px;
+}
+
+.dynamics-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+@media (max-width: 900px) {
+  .dynamics-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .dynamics-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.dynamic-card {
+  padding: 24px;
+  border-radius: 16px;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  text-align: left;
+}
+
+.dynamic-icon {
+  font-size: 28px;
+  margin-bottom: 12px;
+}
+
+.dynamic-card h3 {
+  font-size: 16px;
+  font-weight: 600;
+  margin: 0 0 8px 0;
+}
+
+.dynamic-card p {
+  font-size: 14px;
+  color: var(--text-secondary);
+  margin: 0;
+  line-height: 1.6;
+}
+
+.dynamic-card strong {
+  color: var(--text-primary);
+}

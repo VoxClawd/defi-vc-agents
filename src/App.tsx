@@ -2,6 +2,7 @@ import { HashRouter, Routes, Route } from 'react-router-dom'
 import { Layout } from './components/Layout'
 import { Home } from './pages/Home'
 import { Stage } from './pages/Stage'
+import { Team } from './pages/Team'
 import './index.css'
 
 function App() {
@@ -11,7 +12,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/stage" element={<Stage />} />
-          <Route path="/team" element={<Home />} />
+          <Route path="/team" element={<Team />} />
           <Route path="/portfolio" element={<ComingSoon title="Portfolio" />} />
           <Route path="/insights" element={<ComingSoon title="Insights" />} />
         </Routes>
